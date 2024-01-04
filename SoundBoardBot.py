@@ -4,7 +4,7 @@ import os
 from asyncio import sleep
 from keep_alive import keep_alive
 
-TOKEN = os.environ['Sound_Board_Bot_TOKEN']
+TOKEN = os.getenv("Sound_Board_Bot_TOKEN")
 
 
 class SoundBoardBot(commands.Bot):
